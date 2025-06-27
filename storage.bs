@@ -208,7 +208,7 @@ anticipated that some APIs will be applicable to both <a>storage types</a> going
 <h3 id=storage-keys>Storage keys</h3>
 
 <p>A <dfn export>storage key</dfn> is a <a>tuple</a> consisting of an
-<dfn for="storage key">origin</dfn> (an <a for=url>origin</a>), a
+<dfn for="storage key">origin</dfn> (an <a for=/>origin</a>), a
 <dfn for="storage key">top-level site</dfn> (a <a for=/>site</a>), and a
 <dfn for="storage key">cross site ancestry</dfn>
 (a <a for=environment>cross site ancestry</a>). [[!HTML]]
