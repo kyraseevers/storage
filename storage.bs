@@ -16,7 +16,6 @@ urlPrefix: https://tc39.github.io/ecma262/; spec: ECMASCRIPT
 </pre>
 
 <pre class=link-defaults>
-spec:html; type:dfn; for:site; text:same site
 spec:infra; type:dfn; text:implementation-defined
 spec:infra; type:dfn; text:user agent
 </pre>
@@ -262,10 +261,11 @@ anticipated that some APIs will be applicable to both <a>storage types</a> going
  <li><p>If <var>A</var>'s <a for="storage key">origin</a> is not <a>same origin</a> with
  <var>B</var>'s <a for="storage key">origin</a>, then return false.
 
- <li><p>If <var>A</var>'s <a for="storage key">top-level site</a> is not <a>same site</a>
- with <var>B</var>'s <a for="storage key">top-level site</a>, then return false.
+ <li><p>If <var>A</var>'s <a for="storage key">top-level site</a> is not
+ <a for="site">same site</a> with <var>B</var>'s <a for="storage key">top-level site</a>,
+ then return false.
 
- <li><p>If <var>A</var>'s <a for="storage key">cross-site ancestry</a> is not equal to
+ <li><p>If <var>A</var>'s <a for="storage key">cross-site ancestry</a> is not
  <var>B</var>'s <a for="storage key">cross-site ancestry</a>, then return false.
 
  <li><p>Return true.
