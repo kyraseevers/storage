@@ -209,7 +209,7 @@ anticipated that some APIs will be applicable to both <a>storage types</a> going
 <p>A <dfn export>storage key</dfn> is a <a>tuple</a> consisting of an
 <dfn for="storage key">origin</dfn> (an <a for=/>origin</a>), a
 <dfn for="storage key">top-level site</dfn> (a <a for=/>site</a>), and a
-<dfn for="storage key">cross-site ancestry</dfn> (a boolean). [[!HTML]]
+<dfn for="storage key">has cross-site ancestor</dfn> (a boolean). [[!HTML]]
 
 <div algorithm>
 <p>To <dfn export>obtain a storage key</dfn>, given an <a for=/>environment</a>
@@ -246,10 +246,10 @@ anticipated that some APIs will be applicable to both <a>storage types</a> going
  <li><p>Let <var>topLevelSite</var> be the result of <a>obtaining a site</a> given
  <var>topLevelOrigin</var>.
 
- <li><p>Let <var>crossSiteAncestry</var> be <var>environment</var>'s
+ <li><p>Let <var>hasCrossSiteAncestor</var> be <var>environment</var>'s
  <a for=environment>cross-site ancestry</a>.
 
- <li><p>Return (<var>origin</var>, <var>topLevelSite</var>, <var>crossSiteAncestry</var>).
+ <li><p>Return (<var>origin</var>, <var>topLevelSite</var>, <var>hasCrossSiteAncestor</var>).
 </ol>
 </div>
 
@@ -265,8 +265,8 @@ anticipated that some APIs will be applicable to both <a>storage types</a> going
  <a for="site">same site</a> with <var>B</var>'s <a for="storage key">top-level site</a>,
  then return false.
 
- <li><p>If <var>A</var>'s <a for="storage key">cross-site ancestry</a> is not
- <var>B</var>'s <a for="storage key">cross-site ancestry</a>, then return false.
+ <li><p>If <var>A</var>'s <a for="storage key">has cross-site ancestor</a> is not
+ <var>B</var>'s <a for="storage key">has cross-site ancestor</a>, then return false.
 
  <li><p>Return true.
 </ol>
